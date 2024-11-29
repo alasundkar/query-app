@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Flask App</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="{{ url_for('index') }}">Home</a> |
+            <a href="{{ url_for('execute_query') }}">Execute Query</a>
+        </nav>
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
